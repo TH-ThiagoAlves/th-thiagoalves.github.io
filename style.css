@@ -9,6 +9,17 @@ body{
     display: block;
 }
 
+div{
+    width: 700px;
+    margin: 30px auto;
+    padding: 10px;
+ 
+    box-shadow: 8px 9px 6px -7px black;
+    background-color: #efefef;
+    border: 0px solid;
+    border-radius: 13px;
+    
+}
 
 h2{
     font-family: "Rubik";
