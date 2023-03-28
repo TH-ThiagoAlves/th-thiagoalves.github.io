@@ -1,0 +1,38 @@
+main {
+    top: 0;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    position: relative;
+}
+
+img[alt='logo-fundo'] {
+    height: 7vmin;
+    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+}
+
+img[alt='log'] {
+    height: 4vmin;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
