@@ -7,16 +7,19 @@ import teste from '../../assests/img/teste01.png';
 export default function Hearder() {
     return (
         <main>
-            <div className="container-logo">
-                <img src={logo} alt="logo-fundo" />
-                <img src={teste} alt="log" />
-            </div>
-            <div>
-                Menu
-                <nav>
-
-                </nav>
-            </div>
+            <nav>
+                <div className="container-logo">
+                    <img src={logo} alt="logo-fundo" />
+                    <img src={teste} alt="log" />
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Projetcs</li>
+                    <li>About</li>
+                    <li>Contatar</li>
+                </ul>
+                <button type="button">Botão</button>
+            </nav>
         </main>
     )
 }

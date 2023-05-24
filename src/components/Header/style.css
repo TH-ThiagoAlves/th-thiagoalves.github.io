@@ -1,38 +1,62 @@
 main {
-    top: 0;
-    margin: 0;
-    padding: 0; 
-    width: 100%;
-    height: 70px;
-    background-color: brown;
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
+  top: 0;
+  margin: 0;
+  padding: 0; 
+  width: 100%;
+  height: 70px;
+  background-color: #0c397c;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 0px;
+}
+
+button { margin-left: 30px; }
+
+button, li { cursor: pointer; }
+
 .container-logo {
-    position: relative;
+  position: relative;
+  width: 5vw;
 }
 
 img[alt='logo-fundo'] {
-    height: 7vmin;
-    pointer-events: none;
-    animation: App-logo-spin infinite 20s linear;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+  width: 100%;
+  height: 100%;
 }
 
 img[alt='log'] {
-    height: 4vmin;
-    position: absolute;
-    top: 15px;
-    left: 25px;
+  height: 4vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
