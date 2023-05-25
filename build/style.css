@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+
+
+body{
+    margin: 20px;
+    font-size: 16px;
+    display: block;
+}
+
+div{
+    width: 700px;
+    margin: 30px auto;
+    padding: 10px;
+ 
+    box-shadow: 8px 9px 6px -7px black;
+    background-color: #efefef;
+    border: 0px solid;
+    border-radius: 13px;
+    
+}
+
+h2{
+    font-family: "Rubik";
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+p, ul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, p{
+    line-height: 2rem;
+}
+
+li{
+    list-style: circle;
+   
+}
+::marker{
+    font-size: 22px;
+}
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
