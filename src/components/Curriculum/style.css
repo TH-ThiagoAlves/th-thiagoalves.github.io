@@ -1,0 +1,20 @@
+.introdution-container {
+    width: 100%;
+    height: 568px;
+    background-image: url('../../assests/img/fundo.png');
+    position: relative;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+
+.stars-animation {
+    animation: moveBackgrond 15s infinite ease-in-out alternate;
+    position: absolute;
+  }
+
+@keyframes moveBackgrond {
+    from {
+      overflow-x: hidden;
+      transform: translateX(-50px);
+    }
+}
