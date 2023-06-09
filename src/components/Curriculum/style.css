@@ -13,8 +13,6 @@
   justify-content: center;
 }
 
-
-
 .stars-animation {
   animation: moveBackgrond 15s infinite ease-in-out alternate;
   position: absolute;
@@ -37,6 +35,25 @@ h1 {
   align-content: center;
   place-items: center;
   z-index: 10;
+}
+
+.introdution-container > button {
+  padding: 10px 22px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 5px rgb(95 109 239);
+  z-index: 9;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  background: #5f6def;
+  margin: 0;
+}
+
+button > a {
+  text-decoration: none;
+  color: white;
 }
 
 @keyframes moveBackgrond {
