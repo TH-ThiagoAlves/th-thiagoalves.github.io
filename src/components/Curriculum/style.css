@@ -1,16 +1,43 @@
 .introdution-container {
-    width: 100%;
-    height: 568px;
-    background-image: url('../../assests/img/fundo.png');
-    position: relative;
-    margin-top: 70px;
-    overflow-x: hidden;
+  width: 100%;
+  height: 568px;
+  width: 100%;
+  height: 568px;
+  background-image: url('../../assests/img/fundo.png');
+  position: relative;
+  margin-top: 70px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
+
+
 .stars-animation {
-    animation: moveBackgrond 15s infinite ease-in-out alternate;
-    position: absolute;
-  }
+  animation: moveBackgrond 15s infinite ease-in-out alternate;
+  position: absolute;
+  background: linear-gradient(180deg, rgb(7 6 7), rgb(19 11 20) 70%, rgb(4 7 37));
+  opacity: 0.5;
+}
+
+h1 {
+  color: rgb(164 88 123);
+  font-size: 300%;
+  text-shadow: 2px 2px 4px #58036e;
+  width: 24%;
+  height: 22vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  place-items: center;
+  z-index: 10;
+}
 
 @keyframes moveBackgrond {
     from {
