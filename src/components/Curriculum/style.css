@@ -1,3 +1,39 @@
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff63;
+  pointer-events: none;
+  animation: particleEffect 1s linear infinite;
+}
+
+@keyframes particleEffect {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+
+/* #282c34 */
+/* backdrop-filter: blur(10px); */
+
+
 .introdution-container {
   width: 100%;
   height: 568px;
@@ -22,7 +58,7 @@
 
 h1 {
   color: rgb(164 88 123);
-  font-size: 300%;
+  font-size: 2.5vw;
   text-shadow: 2px 2px 4px #58036e;
   width: 24%;
   height: 22vh;
