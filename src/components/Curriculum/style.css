@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 .particles-container {
   position: fixed;
   top: 0;
@@ -15,20 +17,9 @@
   border-radius: 50%;
   background-color: #ffffff63;
   pointer-events: none;
+  opacity: 0;
   animation: particleEffect 1s linear infinite;
 }
-
-@keyframes particleEffect {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-
 
 /* #282c34 */
 /* backdrop-filter: blur(10px); */
@@ -56,21 +47,30 @@
   opacity: 0.5;
 }
 
+h1, small {
+  font-family: 'Nunito', sans-serif;
+}
+
+small {
+  font-size: 1.5vw;
+}
+
 h1 {
   color: rgb(164 88 123);
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   text-shadow: 2px 2px 4px #58036e;
-  width: 24%;
-  height: 22vh;
+  width: 33%;
+  height: 20vh;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  align-content: center;
+  align-content: flex-start;
   place-items: center;
   z-index: 10;
+  font-weight: 800;
 }
 
 .introdution-container > button {
@@ -97,4 +97,49 @@ button > a {
       overflow-x: hidden;
       transform: translateX(-50px);
     }
+}
+
+@keyframes particleEffect {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+h1, button {
+  animation: hasShown 2s ease-in-out forwards;
+}
+
+button {
+  opacity: 0;
+  animation-delay: 435ms;
+  border: none;
+}
+
+@keyframes hasShown {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+button :hover {
+  animation: isRippling 5s ease-in-out infinite;
+}
+
+@keyframes isRippling {
+  0% {
+    border: solid 10px rgba(95, 109, 239, 0);
+  }
+  100% {
+    border: solid 10px rgb(95 109 239);
+  }
 }
