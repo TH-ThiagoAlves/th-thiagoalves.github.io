@@ -142,3 +142,7 @@ h1 {
     transform: scale(2);
   }
 }
+
+::selection {
+  background-color: #58036e;
+}
