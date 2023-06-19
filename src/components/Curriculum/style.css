@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .particle {
@@ -47,21 +47,31 @@
   opacity: 0.5;
 }
 
-h1, small {
-  font-family: 'Nunito', sans-serif;
+.title-container, .animation-shown {
+  animation: hasShown 2s ease-in-out forwards;
 }
 
-small {
-  font-size: 1.5vw;
+.animation-shown { opacity: 0; }
+
+.title-container {
+  margin: 0;
+  width: 33vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
+
+h1, small { font-family: 'Nunito', sans-serif; }
+
+small { font-size: 1.5vw; }
 
 h1 {
   color: rgb(164 88 123);
   font-size: 3.5vw;
   text-shadow: 2px 2px 4px #58036e;
-  width: 33%;
-  height: 20vh;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,27 +79,50 @@ h1 {
   text-align: center;
   align-content: flex-start;
   place-items: center;
-  z-index: 10;
   font-weight: 800;
 }
 
-.introdution-container > button {
-  padding: 10px 22px;
+.button-download {
+  padding: 15px 28px;
   text-align: center;
   border-radius: 5px;
-  border: solid 5px rgb(95 109 239);
-  z-index: 9;
+  /* border: solid 5px rgb(95 109 239); */
   font-family: sans-serif;
   font-size: large;
   font-weight: 600;
   color: white;
   background: #5f6def;
   margin: 0;
+  box-shadow: 0px 0px 50px 0px #5f6defab;
+  outline: none;
+  border: none;
 }
 
-button > a {
+.button-download a {
   text-decoration: none;
   color: white;
+}
+
+.animation-pulse:hover,
+.animation-pulse:focus {
+  border-radius: 5px;
+  animation: pulse 1.25s ease-in-out infinite;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes hasShown {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #5f6def; }
 }
 
 @keyframes moveBackgrond {
@@ -107,39 +140,5 @@ button > a {
   100% {
     opacity: 0;
     transform: scale(2);
-  }
-}
-
-h1, button {
-  animation: hasShown 2s ease-in-out forwards;
-}
-
-button {
-  opacity: 0;
-  animation-delay: 435ms;
-  border: none;
-}
-
-@keyframes hasShown {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-button :hover {
-  animation: isRippling 5s ease-in-out infinite;
-}
-
-@keyframes isRippling {
-  0% {
-    border: solid 10px rgba(95, 109, 239, 0);
-  }
-  100% {
-    border: solid 10px rgb(95 109 239);
   }
 }
