@@ -107,7 +107,11 @@ h1 {
 .animation-pulse:focus {
   border-radius: 5px;
   animation: pulse 1.25s ease-in-out infinite;
-  box-shadow: 0 0 0 2em transparent;
+}
+
+.animation-pulse:active {
+  opacity: 0.8 !important;
+  box-shadow: #5f6def7d;
 }
 
 @keyframes hasShown {
@@ -122,7 +126,8 @@ h1 {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 #5f6def; }
+  from { box-shadow: 0 0 0 0 #5f6def; }
+  to { box-shadow: 0 0 0 2em transparent; }
 }
 
 @keyframes moveBackgrond {
@@ -133,11 +138,11 @@ h1 {
 }
 
 @keyframes particleEffect {
-  0% {
+  from {
     opacity: 1;
     transform: scale(1);
   }
-  100% {
+  to {
     opacity: 0;
     transform: scale(2);
   }
