@@ -12,12 +12,12 @@ export default function Hearder() {
                     <img src={teste} alt="log" />
                 </div>
                 <ul>
-                    <li>Home</li>
-                    <li>Projetcs</li>
-                    <li>About</li>
-                    <li>Contatar</li>
+                    <li>Inicio</li>
+                    <li>Sobre Mim</li>
+                    <li>Projetos</li>
+                    <li>Contato</li>
                 </ul>
-                <button type="button">Botão</button>
+                <button type="button">Butão</button>
             </nav>
         </header>
     )
