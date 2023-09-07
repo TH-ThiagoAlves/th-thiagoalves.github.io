@@ -1,23 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e7a2a9a.css",
-    "main.js": "/static/js/main.ffbbc485.js",
+    "main.css": "/static/css/main.8afe7b7b.css",
+    "main.js": "/static/js/main.77cd18cc.js",
     "static/js/787.92178d08.chunk.js": "/static/js/787.92178d08.chunk.js",
     "static/media/ThiagoAlves.pdf": "/static/media/ThiagoAlves.dfbdfedc631258c7be6c.pdf",
     "static/media/rosto-big-background.webp": "/static/media/rosto-big-background.05f4da8ccab7699cd587.webp",
     "static/media/rosto-molde.png": "/static/media/rosto-molde.b7f9adbaaca98d25fa7e.png",
     "static/media/rosto-maior.png": "/static/media/rosto-maior.53706a14ad3bd7c8e916.png",
     "static/media/estrelas-big.png": "/static/media/estrelas-big.112ecc8fdfc547273d2b.png",
+    "static/media/TestingLibrary.png": "/static/media/TestingLibrary.3c07dd624b03426c4a2a.png",
     "static/media/pattern1.png": "/static/media/pattern1.80295c4ec5a99c641c43.png",
+    "static/media/Cypress.png": "/static/media/Cypress.cc86bdd30662a57ebddc.png",
     "static/media/teste01.png": "/static/media/teste01.fd7182ae5e2a4656b347.png",
+    "static/media/React01.png": "/static/media/React01.1b15355f9051719c246c.png",
+    "static/media/CSharp.png": "/static/media/CSharp.709debff99ed179f107f.png",
+    "static/media/NodeJs.png": "/static/media/NodeJs.533d543f26fec5ffa73a.png",
+    "static/media/Chai.png": "/static/media/Chai.b15da7ffedf67d69dc2f.png",
+    "static/media/Mocha.png": "/static/media/Mocha.2469ec864474aafe1902.png",
+    "static/media/PHP.png": "/static/media/PHP.1025e88742688c0cd931.png",
+    "static/media/MySql.png": "/static/media/MySql.542e5629a44ceea54ed5.png",
+    "static/media/Heroku.png": "/static/media/Heroku.c9772cdde8ad784df95f.png",
+    "static/media/ColchetesRight.png": "/static/media/ColchetesRight.30fe8a12fc53b38e84b2.png",
+    "static/media/Redux.png": "/static/media/Redux.3cab2f49196510b7ab8e.png",
+    "static/media/Python.png": "/static/media/Python.f6e9aa179b64b2648352.png",
+    "static/media/ColchetesLeft.png": "/static/media/ColchetesLeft.6ae67b3949b6a381cabb.png",
+    "static/media/Sequelize.png": "/static/media/Sequelize.3e2f9e518cfa954dec82.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.9e7a2a9a.css.map": "/static/css/main.9e7a2a9a.css.map",
-    "main.ffbbc485.js.map": "/static/js/main.ffbbc485.js.map",
+    "main.8afe7b7b.css.map": "/static/css/main.8afe7b7b.css.map",
+    "main.77cd18cc.js.map": "/static/js/main.77cd18cc.js.map",
     "787.92178d08.chunk.js.map": "/static/js/787.92178d08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e7a2a9a.css",
-    "static/js/main.ffbbc485.js"
+    "static/css/main.8afe7b7b.css",
+    "static/js/main.77cd18cc.js"
   ]
 }
